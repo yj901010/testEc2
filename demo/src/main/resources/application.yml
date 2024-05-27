@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: demo
+
+    datasource:
+        url: jdbc:mysql://localhost:3306/testDB
+        username: root
+        password: 'abcd0000'
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        open-in-view: false
+        database-platform: org.hibernate.dialect.MySQL8Dialect
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                format_sql: true
+                show_sql: true
